@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Personal Website</title>
+  <link rel="icon" href="assets/logo-unna.png" type="image/png" />
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="About page with responsive aside navigation and service highlights" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">
+      <a href="index.html"><img src="assets/logo-unna.png" alt="Logo" /></a>
+    </div>
+    <button class="hamburger" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">☰</button>
+    <nav class="menu" aria-label="Main">
+      <button class="menu-item" onclick="location.href='index.html'">Home</button>
+      <div class="work-group">
+        <button class="menu-item work-toggle" aria-haspopup="true" aria-expanded="false">Work</button>
+        <div class="submenu" role="menu" aria-label="Work pages">
+          <a class="submenu-item" role="menuitem" href="work/reano.html">
+            <span class="submenu-dots"><span class="dot dot-3"></span><span class="dot dot-2"></span></span>
+            <span class="submenu-text">Reano</span>
+          </a>
+          <a class="submenu-item" role="menuitem" href="work/arvo.html">
+            <span class="submenu-dots"><span class="dot dot-3"></span></span>
+            <span class="submenu-text">Arvo</span>
+          </a>
+          <a class="submenu-item" role="menuitem" href="work/mulburrystudio.html">
+            <span class="submenu-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></span>
+            <span class="submenu-text">Mulburry Studio</span>
+          </a>
+          <a class="submenu-item" role="menuitem" href="work/wabalastudio.html">
+            <span class="submenu-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span><span class="dot dot-3"></span></span>
+            <span class="submenu-text">Wabala Studio</span>
+          </a>
+          <a class="submenu-item" role="menuitem" href="work/nguyendigital.html">
+            <span class="submenu-dots"><span class="dot dot-1"></span><span class="dot dot-3"></span></span>
+            <span class="submenu-text">Nguyen Digital</span>
+          </a>
+          <a class="submenu-item" role="menuitem" href="work/seniorsyncare.html">
+            <span class="submenu-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span><span class="dot dot-3"></span></span>
+            <span class="submenu-text">Seniorsyncare</span>
+          </a>
+          <a class="submenu-item" role="menuitem" href="work/showpao.html">
+            <span class="submenu-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></span>
+            <span class="submenu-text">Showpao</span>
+          </a>
+          <a class="submenu-item" role="menuitem" href="work/logofolio.html">
+            <span class="submenu-dots"><span class="dot dot-1"></span></span>
+            <span class="submenu-text">Logofolio</span>
+          </a>
+        </div>
+        <div class="mobile-chat">
+          <p>Let's connect.</p>
+          <p><a class="social-link" href="https://linkedin.com/in/unna-regino" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.svg" alt="LinkedIn"> /unna-regino</a></p>
+          <p>name@gmail.com</p>
+        </div>
+      </div>
+      <button class="menu-item selected">About</button>
+    </nav>
+
+    <div class="aside-footer">
+      <p>Let's connect.</p>
+      <p><a class="social-link" href="https://linkedin.com/in/unna-regino" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.svg" alt="LinkedIn"> /unna-regino</a></p>
+      <p>name@gmail.com</p>
+      <div class="now-playing"><p class="np-label">Currently Listening</p><div class="np-row"><div class="np-thumb-wrap"><img class="np-thumb" src="https://img.youtube.com/vi/YiD27C_8134/mqdefault.jpg" alt="Album cover"><button class="np-play-btn" aria-label="Play" onclick="var p=this.closest('.np-thumb-wrap');var f=document.createElement('iframe');f.src='https://www.youtube.com/embed/YiD27C_8134?autoplay=1';f.allow='autoplay;encrypted-media';f.setAttribute('allowfullscreen','');f.className='np-yt-frame';p.replaceWith(f);">&#9654;</button></div><div class="np-meta"><p class="np-album">BODIES</p><p class="np-artist">Thornhill</p><a class="np-ytlink" href="https://www.youtube.com/watch?v=YiD27C_8134&list=OLAK5uy_lDzUVVK7lQEmtogXEdHExCnab5HtFDv0I" target="_blank" rel="noopener noreferrer">Open in YouTube ↗</a></div></div></div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="atf">
+      <h1>About Me</h1>
+      <p class="narrow-copy">I am a multidisciplinary designer working across graphic design, brand identity, and web and interface design, with a background in UX research and product thinking. I have worked with clients across civic, cultural, and tech sectors on everything from brand systems and editorial design to interfaces and interactive prototypes.
+      </p>
+    </section>
+
+    <section class="bio-video" style="margin-top:2rem;">
+      <p>Here's a short introduction to my process and how I work with clients.</p>
+      <div class="video-embed">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NNs43Y1LEqk" title="Intro video" frameborder="0" allowfullscreen style="border:0;"></iframe>
+      </div>
+      <p class="caption">Presentation at Art-Talks for Korean Film Festival Canada</p>
+    </section>
+
+    <section style="margin-top:2rem;">
+      <h2>Design Philosophy</h2>
+      <p class="narrow-copy">Every project starts with a question: why does this need to exist, and for whom? I frame hypotheses, use research to challenge assumptions, and stay open to being wrong. To me, lightbulb moments come in conversations with clients, colleagues, and users.</p>
+      <p class="narrow-copy">What I've learned over the years is that range matters as much as depth. What I try to bring to every project is range: I ask questions before making decisions, lead projects end to end, and move between the detail and the bigger picture without losing either.</p>
+      <p class="narrow-copy"> The balance between the granular and the holistic is what I find most rewarding about design, and what I think makes the difference between something that looks beautiful and something that actually works.</p>
+    </section>
+
+    <section style="margin-top:2rem;">
+      <h2>Core Services</h2>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Graphic Design</h3>
+          <p>Designing visual communication across every format.</p>
+          <ul>
+            <li>Print & Digital Collateral</li>
+            <li>Editorial & Publication Design</li>
+            <li>Event & Environmental Design</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Brand Identity</h3>
+          <p>Building cohesive brand systems that communicate who you are before you say a word.</p>
+          <ul>
+            <li>Brand Identity</li>
+            <li>Logo & Iconography</li>
+            <li>Typography & Colour</li>
+            <li>Brand Guidelines</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Web & Interface Design</h3>
+          <p>Designing digital experiences that are intuitive, accessible, and built to work.</p>
+          <ul>
+            <li>UI Design & Prototyping</li>
+            <li>UX Research & Usability Testing</li>
+            <li>Design systems & handoff</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+<script>
+  (function(){
+    var hb = document.querySelector('.hamburger');
+    var sb = document.querySelector('.sidebar');
+    var workToggle = document.querySelector('.work-toggle');
+    var workGroup = document.querySelector('.work-group');
+    if(!hb || !sb) return;
+    hb.addEventListener('click', function(){
+      var open = sb.classList.toggle('open');
+      hb.setAttribute('aria-expanded', open);
+      hb.textContent = open ? '✕' : '☰';
+    });
+    if(workToggle && workGroup){
+      workToggle.addEventListener('click', function(e){
+        if(window.innerWidth<=900){
+          e.preventDefault();
+          workGroup.classList.toggle('open');
+        }
+      });
+    }
+    window.addEventListener('resize', function(){
+      if(window.innerWidth>900){
+        sb.classList.remove('open');
+        hb.setAttribute('aria-expanded','false');
+        hb.textContent = '☰';
+        workGroup.classList.remove('open');
+      }
+    });
+  })();
+</script>
+</body>
+</html>
