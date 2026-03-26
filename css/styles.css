@@ -27,6 +27,9 @@
 html,body{height:100%;margin:0;font-family:'Satoshi', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#0b1220;background:#f7f7f7}
 p{font-family:'Satoshi', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;font-size:0.85rem;}
 h1,h2,h3,h4,h5,h6{font-family:'Libre Caslon Condensed', Georgia, serif;}
+@media (max-width:900px){
+  p{font-size:0.9rem;}
+}
 body {
   overflow-x: hidden;
 }
@@ -204,7 +207,8 @@ body {
 .atf p{margin:0;color:var(--muted);max-width:55ch}
 
 .selected-work{margin-top:3rem}
-.selected-work h2{margin:0 0 1rem 0}
+.selected-work h2{margin:0 0 0.25rem 0}
+.selected-work .work-grid{margin-top:1rem;}
 
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid #191919;border-radius:0;overflow:hidden;}
 .work-grid > *{border-right:1px solid #191919;border-bottom:1px solid #191919;}
@@ -436,6 +440,11 @@ body {
 
 .bio-video .video-embed{margin-top:1rem;max-width:900px;width:100%;aspect-ratio:16/9;background:#111;border-radius:8px;overflow:hidden;}
 .caption, .work-caption{margin-top:0.5rem;color:#191919;font-size:0.65rem;letter-spacing:0.08em;opacity:0.7;font-family:'Satoshi', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;font-style:italic;text-transform:uppercase;max-width:900px;}
+.cite-ref{font-size:0.7rem;color:var(--muted);margin:0;line-height:1.5;}
+.page-refs{margin-top:2.5rem;padding-top:1rem;border-top:1px solid rgba(25,25,25,0.12);}
+.cite-link{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;transition:color .2s,border-bottom-color .2s;}
+.cite-link:hover{color:#191919;border-bottom-color:#191919;}
+.cite-link sup{font-size:0.65rem;}
 .narrow-copy{max-width:calc((100vw - 8.5rem) / 2.25);margin-top:1rem;margin-bottom:1rem;color:#1E293B;line-height:1.5;}
 @media (max-width:900px){
   .narrow-copy{max-width:100%;}
