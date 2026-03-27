@@ -197,7 +197,7 @@ body {
 
 .content{margin-left:25vw;padding:var(--page-pad);padding-bottom:5.5rem;min-height:100vh}
 .content::after{
-  content:"DESIGNED AND CODED BY UNNA REGINO (C) 2026";
+  content:"DESIGNED AND VIBE-CODED BY UNNA REGINO (C) 2026";
   display:block;
   margin-top:2.5rem;
   font-family:'Satoshi', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
