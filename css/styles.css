@@ -189,6 +189,12 @@ body {
   }
 }
 
+@keyframes unna-float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
 .content{margin-left:25vw;padding:var(--page-pad);padding-bottom:5.5rem;min-height:100vh}
 .content::after{
   content:"DESIGNED AND CODED BY UNNA REGINO (C) 2026";
@@ -204,7 +210,13 @@ body {
   animation: atf-enter 1s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 .atf h1{margin:2rem 0 0.5rem 0;font-size: clamp(1.6rem, 5vw, 4rem);line-height:4.2rem;font-weight:400;}
+.unna-name-inline{display:inline-flex;align-items:center;gap:0.18em;white-space:nowrap;}
+.unna-name-image{height:1em;width:auto;display:inline-block;animation:unna-float 4.8s ease-in-out infinite;will-change:transform;}
 .atf p{margin:0;color:var(--muted);max-width:55ch}
+
+@media (prefers-reduced-motion: reduce){
+  .unna-name-image{animation:none;}
+}
 
 .selected-work{margin-top:3rem}
 .selected-work h2{margin:0 0 0.25rem 0}
@@ -265,6 +277,24 @@ body {
   height:auto;
   max-height:none;
   overflow:hidden;
+}
+.reano-linkedin-wrap{
+  padding:2.5rem;
+}
+.reano-linkedin-wrap .reano-linkedin-img{
+  width:48%;
+  max-width:260px;
+  height:auto;
+  object-fit:contain;
+  margin:auto;
+}
+.ws-logoevolution-wrap{
+  padding:2.5rem;
+}
+.ws-logoevolution-wrap .ws-logoevolution-img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
 }
 .work-page-grid{
   display:grid;
@@ -429,6 +459,22 @@ body {
 }
   /* ensure the menu content does not sit under the close icon */
   .sidebar.open .menu{padding-top:7rem}
+  .reano-splash-wrap{
+    padding-top:1.6rem;
+    padding-bottom:1.6rem;
+  }
+  .reano-splash-wrap .reano-splash-video{
+    width:58% !important;
+  }
+  .reano-linkedin-wrap{
+    padding:1.8rem;
+  }
+  .reano-linkedin-wrap .reano-linkedin-img{
+    width:60%;
+  }
+  .ws-logoevolution-wrap{
+    padding:1.2rem;
+  }
 }
 
 /* default hide mobile chat (desktop) */
