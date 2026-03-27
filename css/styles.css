@@ -242,7 +242,7 @@ body {
 
 .work-card:focus{outline:3px solid rgba(99,102,241,0.12);outline-offset:3px}
 .work-page-image{
-  background:#ddd;
+  background:#ffffff;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -261,7 +261,7 @@ body {
   border-radius:8px;
   min-height:180px;
   height:auto;
-  max-height:280px;
+  max-height:none;
   overflow:hidden;
 }
 .work-page-grid{
