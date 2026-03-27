@@ -428,6 +428,10 @@ body {
   .work-grid{grid-template-columns:repeat(2,1fr)}
   .work-page-grid, .work-page-2col{grid-template-columns:1fr;}
   .logofolio-item{grid-template-columns:1fr;}
+  .logo-card{
+    border-right:1px solid #191919;
+    border-bottom:0;
+  }
 
   /* hide footer on mobile and keep hamburger at top-right */
   .aside-footer{display:none !important;}
