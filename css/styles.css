@@ -339,9 +339,9 @@ body {
 
 }
 .ssc-old-homepage-container{
-  min-height:200px;
-  max-height:320px;
-  align-self:start;
+  min-height:260px;
+  height:auto;
+  align-self:stretch;
 }
 .work-info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem;margin-top:1rem;}
 .work-info-card{background:#fff;padding:0.9rem;border:0;border-radius:4px;}
