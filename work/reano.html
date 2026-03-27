@@ -125,7 +125,7 @@
             </p>
             <div class="work-page-image"><img src="../assets/wabalastudio/mu-wabala-ebook.jpg" alt="Ebook"></div>
           <div class="work-page-grid" style="margin-top:0.8rem;">
-            <div class="work-page-image"><img src="../assets/wabalastudio/mu-wabala-linkedin.jpg" alt="Ebook"></div>
+            <div class="work-page-image" style="min-height:0;height:auto;"><video class="splash-video" src="../assets/reano/mu-reano-splash.mp4" muted loop playsinline preload="metadata" aria-label="Reano splash" style="width:40%;height:auto;object-fit:unset;"></video></div>
             <div class="work-page-image-narrow"><img src="../assets/wabalastudio/mu-ws-wrapper.png" alt=""></div>
           </div>
           </section>
@@ -136,6 +136,19 @@
 
   <script>
     (function(){
+      var splashVideo=document.querySelector('.splash-video');
+      if(splashVideo&&'IntersectionObserver' in window){
+        new IntersectionObserver(function(entries,obs){
+          entries.forEach(function(entry){
+            if(entry.isIntersecting){
+              splashVideo.classList.add('splash-visible');
+              splashVideo.play();
+              obs.unobserve(splashVideo);
+            }
+          });
+        },{threshold:0.2}).observe(splashVideo);
+      }
+
       var hb=document.querySelector('.hamburger');
       var sb=document.querySelector('.sidebar');
       var workToggle=document.querySelector('.work-toggle');
